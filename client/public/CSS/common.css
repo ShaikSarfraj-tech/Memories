@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Special+Elite&display=swap);
+
+body{
+    background-color: #004A59;
+    margin: 0;
+    background-image: url("https://www.transparenttextures.com/patterns/light-sketch.png");
+
+}
+
+.nav-bar{
+    background-color: #FFFFFF;
+    font-family: 'Fredericka the Great';
+    font-size: larger;
+    height: 85px;
+    position: fixed;
+    top: 0;
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+}
+
+.nav-logo{
+    height: 80px;
+    position: relative;
+    width: 150px;
+    bottom: 2px;
+}
+
+.nav-link{
+    float: right;
+    margin-top: 5px;
+    padding: 25px;
+}
+
+a{
+    padding: 15px;
+    color: #121B22;
+    text-decoration: none;
+}
+
+a:hover{
+    border-color: #121B22;
+    border-style: double;
+    border-radius: 5px;
+}
+
+.active{
+    border-color: #121B22;
+    border-style: double;
+    border-radius: 5px;
+}
+
+.bottom{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: wheat;
+    
+}

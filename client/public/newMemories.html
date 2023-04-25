@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Travelling Memories</title>
+        <link rel="icon" href="../images/logo.png"> 
+        <link rel="stylesheet" href="../CSS/common.css">   
+        <link rel="stylesheet" href="../CSS/newMemories.css">
+    </head>
+    <body>
+        <div class="nav-bar margin">
+            <img class="nav-logo" src="/images/Logo.png" alt="">
+            <nav class="nav-link">
+                <a href="./profile.html">Profile</a>
+                <a class="active" href="./newMemories.html">New Memories</a>
+                <a href="./memories.html">Memories</a>
+                <a href="./index.html">Logout</a>
+            </nav>
+        </div>
+        <div class="vlog-details">
+            <form action="/newMemory" method="post">
+                <table>
+                    <tr>
+                        <td><label for="vlog_title">Vlog Title : </label></td>
+                        <td><input type="text" id="vlog_title" name="vlog_title" value=""></td>
+
+                    </tr>
+                    <tr>
+                        <td><label>Date : </label></td>
+                        <td class="inner">
+                            <table class="inner-table">
+                                <tr class="inner-row">
+                                    <td class="inner-column1"><label for="from">From : </label></td>
+                                    <td class="inner-column1"><label for="to">To : </label></td>
+                                </tr>
+                                <tr class="inner-row">
+                                    <td class="inner-column2"><input type="date" id="from" name="date_from" value=""></td>
+                                    <td class="inner-column2"><input type="date" id="date" name="date_to" value=""></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="vlog-cover">Vlog Cover Image : </label></td>
+                        <td><input  type="file" name="" id="fileId"  value=""></td>
+                    </tr>
+                    <!-- <button onclick="displayString()">
+                        Display String
+                    </button> -->
+                    <tr>
+                        <td><label for="images">Images : </label></td>
+                        <td><input type="file" id="images" name="images" value="" multiple></td>
+                    </tr>
+                    <tr>
+                        <td><label for="note">Note : </label></td>
+                        <td><input name="note" value="" type="text" id="note" rows="10" cols="70"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="btn" colspan="2">
+                            <button type="submit" class="create-btn">Create New Memories</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <script>
+            let base64String = "";
+  
+  function imageUploaded() {
+      var file = document.getElementById(
+          'input[type=file]')['files'][0];
+    
+      var reader = new FileReader();
+      console.log("next");
+        
+      reader.onload = function () {
+          base64String = reader.result.replace("data:", "")
+              .replace(/^.+,/, "");
+    
+          imageBase64Stringsep = base64String;
+    
+          // alert(imageBase64Stringsep);
+          console.log(base64String);
+      }
+      reader.readAsDataURL(file);
+  }
+    
+  function displayString() {
+      console.log("Base64String about to be printed");
+     console.log(base64String);
+  }
+  imageUploaded()
+  displayString()
+        </script>
+    </body>
+</html>

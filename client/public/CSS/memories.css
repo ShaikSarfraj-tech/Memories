@@ -1,0 +1,46 @@
+.memories-list{
+    float: left;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin: 20px 10px;
+    width: 320px;
+    height: 320px;
+    
+}
+.memories-list-image{
+    border-radius: 10px 10px 0 0;
+    width: 320px;
+}
+
+.del-div{
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    position: relative;
+    bottom: 35px;
+    left: 280px;
+}
+ 
+
+.del-div:hover{
+    background-color: #004A59;
+}
+
+.memories-list:hover{
+    transform: scale(1.05);
+} 
+
+h3,p{
+    margin: 0;
+    text-align: center;
+}
+
+.del-icon{
+    padding: 5px;
+}
+
+.del-icon:hover{
+    filter: invert(100%);
+}
+

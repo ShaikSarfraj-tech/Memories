@@ -1,0 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Special+Elite&display=swap);
+
+
+.main-body{
+    margin: 90px 10px 10px 10px;
+}
+
+.note-container{
+    background-image: url(/images/Note.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    font-family: 'Special Elite';
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.dairy-note{
+    padding-left: 10px;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 250px;
+    height: 200px;
+}
+.item7{
+    grid-area: 2 / 2 / 4 / 4;;
+}
+
+.gallery-images{
+    display: inline grid;
+    padding: 5px;
+    width: 325px;
+    height: 220px;
+}

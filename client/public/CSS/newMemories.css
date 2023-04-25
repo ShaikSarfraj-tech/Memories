@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Special+Elite&display=swap);
+
+.vlog-details{
+    position: static;
+    left: 50px;
+    margin-top: 100px;
+    font-family: 'Fredericka the Great';
+    color: white;
+    font-size: x-large;
+} 
+
+table{
+    margin: auto;
+}
+
+tr{
+    width: 25px;
+    height: 75px;
+}
+
+td{
+    padding: 15px;
+}
+
+input{
+    background-color: transparent;
+
+    border: double;
+    border-color: white;
+    color: white;
+    font-family: 'Special Elite';
+    font-size: 20px;
+    padding: 10px;
+    width: 80%;
+    height: 30px;
+}
+
+textarea{
+    background-color: transparent;
+    border: double;
+    border-color: white;
+    color: white;
+    font-family: 'Special Elite';
+    padding: 15px;
+    font-size: 20px;
+    width: 79%; 
+}
+
+.inner{
+    padding-left: 0;
+}
+
+.inner-table{
+    position: static;
+    right: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.inner-column2{
+    width: 329px;
+}
+
+.btn{
+    padding-left: 300px;
+    
+}
+
+.create-btn{
+    background-color: white;
+    border-radius: 30px;
+    color: #004A59;
+    font-family: 'Fredericka the Great';
+    font-size: larger;
+    width: 500px;
+    height: 50px;
+}
+
+.create-btn:hover{
+    border-color:  #004A59;
+    border: double;
+}    
